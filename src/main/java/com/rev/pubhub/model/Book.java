@@ -16,24 +16,24 @@ public class Book {
 	@Id
 	@GeneratedValue
 	@Column(name = "id")
-	private Long id;
+	private Integer id;
 	@Column(name = "NAME")
 	private String name;
 	@Column(name = "price")
 	private Integer price;
 	@Column(name = "released_date")
-	private LocalDate releasedOn;
+	private LocalDate released_on;
 
 	@Override
 	public String toString() {
-		return "Book [id=" + id + ", name=" + name + ", price=" + price + ", released_on=" + releasedOn + "]";
+		return "Book [id=" + id + ", name=" + name + ", price=" + price + ", released_on=" + released_on + "]";
 	}
 
-	public Long getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -53,12 +53,12 @@ public class Book {
 		this.price = price;
 	}
 
-	public LocalDate getReleasedOn() {
-		return releasedOn;
+	public LocalDate getReleased_on() {
+		return released_on;
 	}
 
-	public void setReleased_on(LocalDate releasedOn) {
-		this.releasedOn = releasedOn;
+	public void setReleased_on(LocalDate released_on) {
+		this.released_on = released_on;
 	}
 
 }

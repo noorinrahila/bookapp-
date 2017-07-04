@@ -11,6 +11,6 @@ public class HomeController {
 	@GetMapping("/")
 	public String front(){
 		System.out.println("Index");
-		return "home/welcome";
+		return "welcome";
 	}
 }

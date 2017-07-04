@@ -17,31 +17,24 @@ public class BookService {
 	public List<Book> findAll() {
 		return bookRepository.findAll();
 	}
-	
-public Book findOne(Long id) {
+
+/*	public Book findOne(Long id) {
 		return bookRepository.findOne(id);
 	}
 
-public List<Book> priceDesc() {
+	public List<Book> findByPriceDesc() {
 		return bookRepository.findByOrderByPriceDesc();
 	}
 	
-	public List<Book> priceAsc() {
+	public List<Book> findByPriceAsc() {
 		return bookRepository.findByOrderByPriceAsc();
 	}
-	public List<Book> specificBook(String name){
-		System.out.println("Service reached");
-		return bookRepository.findByName(name);
-	}
 
-	public List<Book> findByOrderByReleasedOnDesc() {
-		return bookRepository.findByOrderByReleasedOnDesc();
+	public List<Book> findByReleasedDateDesc() {
+		return bookRepository.findByOrderByReleasedDateDesc();
 	}
-	public Long bookCount(){
-		 return	bookRepository.count();
-		}
 	
-	/*public List<BookSalesResult> findBookSales()
+	public List<BookSalesResult> findBookSales()
 	{
 		return bookSalesRepository.findBookSales();
 	}*/
